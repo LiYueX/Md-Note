@@ -29,9 +29,9 @@
 ```js
 附录：express.conf
 server {
-    listen  80;
+    listen  80 default;
     server_name liyuexi.express.com;
-    root /home/liyuexi/文档/express-api/;
+    root /home/liyuexi//express-api/;
 }
 ```
 5.  重新加载配置文件
@@ -64,11 +64,14 @@ server {
   ```js
   附录：express.conf
   server {
-      listen  80;
+      listen  80 default;  
       server_name liyuexi.express.com;
-      root /home/liyuexi/文档/express-api/;
+      root /home/liyuexi/express-api/;
   }
   ```
+  重新加载 sodu service nginx reload
+
+  default 只能有一个
 
 ### Vim 教程
 
